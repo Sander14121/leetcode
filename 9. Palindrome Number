@@ -1,0 +1,14 @@
+class Solution(object):
+    def isPalindrome(self, x):
+        string = str(x)
+        framover = []
+        reverser = []
+        for tall in string:
+            framover.append(tall)
+            reverser.append(tall)
+        reverser.reverse()
+
+        if framover == reverser:
+            return True
+        else:
+            return False
